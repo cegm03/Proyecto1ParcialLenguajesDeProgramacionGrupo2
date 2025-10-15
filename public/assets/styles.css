@@ -28,6 +28,20 @@ h1 {
     color: #000;
 }
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #000;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #000;
+}
+
 .subtitle {
     font-family: 'Pacifico', cursive;
     font-size: 24px;
@@ -49,7 +63,8 @@ h1 {
     font-size: 16px;
 }
 
-.input-group input {
+.input-group input,
+.input-group textarea {
     width: 100%;
     padding: 12px 15px 12px 40px;
     border: none;
@@ -60,14 +75,20 @@ h1 {
     font-size: 16px;
 }
 
-.input-group input::placeholder {
+.input-group textarea {
+    padding: 12px 15px;
+    resize: none;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
     color: #ccc;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    background-color: #3b4044; 
+    background-color: #3b4044;
     color: white;
     border: none;
     border-radius: 30px;
@@ -86,21 +107,33 @@ button:hover {
     justify-content: center;
     color: #808080;
     font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.remember input {
-    margin-right: 5px;
+    margin-bottom: 20px;
 }
 
 .register-link {
     display: block;
     text-align: center;
-    color: #4a5a55;
+    color: #4a595a;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 10px 0;
+    transition: color 0.3s ease;
 }
 
 .register-link:hover {
+    color: #455562;
     text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
 }
